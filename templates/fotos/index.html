@@ -1,26 +1,79 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fotos</title>
+    <title>Minha Página</title>
+    <style>
+        body{
+            background-color: #55407c;
+        }
+        .header {
+            background-color: #3e2a64; /* Define a cor de fundo */
+            color: white; /* Define a cor do texto */
+            padding: 10px; /* Define o tamanho do padding */
+            text-align: center; /* Centraliza o texto */
+            position: fixed; /* Fixa a barra no topo da página */
+            top: 0; /* Define a distância entre a barra e o topo da página */
+            left: 0; /* Define a distância entre a barra e a esquerda da página */
+            right: 0; /* Define a distância entre a barra e a direita da página */
+            height: 30px; /* Define a altura da barra superior */
+        }
+        /* Define a classe para os botões */
+        .button {
+            background-color: #3e2a64;
+            /* Cor de fundo */
+            color: white;
+            /* Cor do texto */
+            border: none;
+            /* Remove a borda */
+            padding: 10px 20px;
+            /* Define o tamanho do padding */
+            text-align: center;
+            /* Centraliza o texto */
+            text-decoration: none;
+            /* Remove a decoração do texto */
+            display: inline-block;
+            /* Faz com que os botões fiquem um ao lado do outro */
+            font-size: 16px;
+            /* Define o tamanho da fonte */
+            margin: 5px;
+            /* Define a margem entre os botões */
+            cursor: pointer;
+            /* Altera o cursor quando o mouse passa por cima */
+        }
+
+        /* Define a classe para o botão "Cadastrar" */
+        .signup {
+            background-color: #3e2a64;
+            /* Cor de fundo diferente do botão "Login" */
+        }
+
+        /* Define a classe para a div que contém os botões */
+        .button-container {
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+
+        /* Define a margem direita para o botão "Login" */
+        .login {
+            margin-right: 10px;
+        }
+    </style>
 </head>
+
 <body>
-    <h1>Minhas Fotos</h1>
-    <ul>
-        <li>
-           <a href="#">home</a>
-        </li>
-        <li>
-            <a href="#">viagens</a>
-        </li>
-        <li>
-            <a href="#">casas</a>
-        </li>
-        <li>
-            <a href="#">paisagens</a>
-        </li>
-    </ul>
+    <div class="header">
+        
+    </div>
+    <!-- Cria uma div para colocar os botões na parte superior direita -->
+    <div class="button-container">
+        <!-- Cria o botão "Cadastrar" -->
+        <button class="button signup">Cadastrar</button>
+
+        <!-- Cria o botão "Login" -->
+        <button class="button login">Login</button>
+    </div>
 </body>
+
 </html>
